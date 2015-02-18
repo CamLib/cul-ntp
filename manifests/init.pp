@@ -1,6 +1,6 @@
 class ntp (
-    $enable     = 'true',
-    $start      = 'true',
+    $enable     = true,
+    $start      = true,
     $packages   = [],
     $version    = 'latest',
     $configfile = '/etc/ntp.conf',
