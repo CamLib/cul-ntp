@@ -1,0 +1,13 @@
+---
+ntp::packages:
+    - ntp
+
+ntp::version: 'latest'
+ntp::enable: 'true'
+ntp::start: 'true'
+
+ntp::configfile: '/etc/ntp.conf'
+ntp::servers:
+    - ntp3.cam.ac.uk
+    - ntp2.cam.ac.uk
+    - ntp1.cam.ac.uk
