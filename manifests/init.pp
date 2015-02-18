@@ -1,7 +1,8 @@
 class ntp (
-    $version    = 'latest',
     $enable     = 'true',
     $start      = 'true',
+    $packages   = [],
+    $version    = 'latest',
     $configfile = '/etc/ntp.conf',
     $servers    = [],
 ) {
