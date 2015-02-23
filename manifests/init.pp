@@ -1,10 +1,10 @@
 class ntp (
-    $enable     = true,
-    $start      = true,
-    $packages   = [],
-    $version    = 'latest',
-    $configfile = '/etc/ntp.conf',
-    $servers    = [],
+    $enable     = undef,
+    $start      = undef,
+    $packages   = undef,
+    $version    = undef,
+    $configfile = undef,
+    $servers    = undef,
 ) {
     class{'ntp::install': } ->
     class{'ntp::config': } ~>
