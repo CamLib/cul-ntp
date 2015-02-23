@@ -6,10 +6,8 @@ class ntp (
     $configfile = '/etc/ntp.conf',
     $servers    = [],
 ) {
-    anchor { 'ntp::begin': } ->
     class{'ntp::install': } ->
     class{'ntp::config': } ~>
     class{'ntp::service': } ->
-    anchor { 'ntp::end': }
-#    Class["ntp"]
+    Class["ntp"]
 }
